@@ -1,0 +1,65 @@
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the navbar */
+#navbar {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  
+}
+
+/* Navbar links 
+#navbar a {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}*/
+#navbar {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:flex-start;
+    text-decoration: underline bold;
+}
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#navbar a.active {
+  background-color: lightgoldenrodyellow;
+  color: white;
+}
+/* Page content */
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.content {
+  padding: 16px;
+}
+.main{
+    background-image: url("/images/background.png");
+}
+.nuggetImage{
+   display: flex;
+   justify-content: space-around;
+   height: 400px;
+}
